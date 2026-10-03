@@ -9,6 +9,65 @@ html.dark {
   color-scheme: dark;
 }
 
+/* Fix Native Date, Time, and Select Input Text Visibility in Light & Dark Mode */
+input[type="date"],
+input[type="time"],
+select {
+  color: #111827 !important;
+  background-color: #ffffff !important;
+  color-scheme: light !important;
+}
+
+html.dark input[type="date"],
+html.dark input[type="time"],
+html.dark select {
+  color: #f9fafb !important;
+  background-color: #1f2937 !important;
+  color-scheme: dark !important;
+}
+
+/* Webkit Datetime Edit Sub-fields (Month, Day, Year, Hour, Minute, AM/PM) */
+input[type="date"]::-webkit-datetime-edit,
+input[type="date"]::-webkit-datetime-edit-fields-wrapper,
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field,
+input[type="time"]::-webkit-datetime-edit,
+input[type="time"]::-webkit-datetime-edit-fields-wrapper,
+input[type="time"]::-webkit-datetime-edit-text,
+input[type="time"]::-webkit-datetime-edit-hour-field,
+input[type="time"]::-webkit-datetime-edit-minute-field,
+input[type="time"]::-webkit-datetime-edit-ampm-field {
+  color: #111827 !important;
+}
+
+html.dark input[type="date"]::-webkit-datetime-edit,
+html.dark input[type="date"]::-webkit-datetime-edit-fields-wrapper,
+html.dark input[type="date"]::-webkit-datetime-edit-text,
+html.dark input[type="date"]::-webkit-datetime-edit-month-field,
+html.dark input[type="date"]::-webkit-datetime-edit-day-field,
+html.dark input[type="date"]::-webkit-datetime-edit-year-field,
+html.dark input[type="time"]::-webkit-datetime-edit,
+html.dark input[type="time"]::-webkit-datetime-edit-fields-wrapper,
+html.dark input[type="time"]::-webkit-datetime-edit-text,
+html.dark input[type="time"]::-webkit-datetime-edit-hour-field,
+html.dark input[type="time"]::-webkit-datetime-edit-minute-field,
+html.dark input[type="time"]::-webkit-datetime-edit-ampm-field {
+  color: #f9fafb !important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: none;
+  cursor: pointer;
+}
+
+html.dark input[type="date"]::-webkit-calendar-picker-indicator,
+html.dark input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
 /* Custom Slick Scrollbar Styles */
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;
@@ -36,7 +95,6 @@ html.dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: rgba(156, 163, 175, 0.7);
 }
 
-/* Firefox fallback */
 .custom-scrollbar {
   scrollbar-width: thin;
   scrollbar-color: rgba(156, 163, 175, 0.4) transparent;
