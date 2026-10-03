@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 DailyTrack - Modern Task Management & Productivity Analytics
 
-## Getting Started
+`DailyTrack` is a feature-rich, high-performance To-Do and Productivity Analytics web application built with **Next.js 16 (App Router)**, **HeroUI v3**, and **Tailwind CSS v4**.
 
-First, run the development server:
+---
 
+## ✨ Features
+
+- 📋 **Subtasks & Nested Checklists**: Create, manage, and complete nested subtask checklists per task.
+- 🤹 **60fps Drag-and-Drop Kanban Board**: Real-time Kanban board view with automatic subtask progression rules (`To Do`, `In Progress`, `Completed`).
+- 📅 **Interactive Full-Month Calendar**: View and filter tasks by date with color-coded priority and completion badges.
+- 📊 **Productivity Analytics Dashboard**: Interactive pie charts, weekly completion trend visualizers, and real-time KPI metrics.
+- ⏰ **Time Pickers & Reminders**: Set task time reminders with 12-hour AM/PM formatting and native browser desktop notifications.
+- 🔔 **Floating Toast Notifications**: Animated visual feedback for task creation, completion, status updates, and deletions.
+- ⌨️ **Keyboard Shortcuts**: Power-user global hotkeys (`Ctrl+K` for search, `Ctrl+N` for new task, `Ctrl+Shift+K` for view toggle).
+- 🌓 **Dark & Light Mode Theme**: Automatic theme switching with `localStorage` persistence.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **UI Components**: `@heroui/react` 3.2.6 & Tailwind CSS v4
+- **Icons & Styling**: Lucide React & Tailwind v4 `@import "tailwindcss"`
+- **State & Storage**: Client-side state with `localStorage` persistence
+- **Language**: JavaScript (JSX)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/kawser0x/Daily-Tracker.git
+cd Daily-Tracker
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 3. Run development server
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ⌨️ Keyboard Shortcuts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Shortcut | Action |
+| :--- | :--- |
+| `Ctrl + K` / `Cmd + K` | Focus task search input |
+| `Ctrl + N` / `Cmd + N` | Launch New Task input |
+| `Ctrl + Shift + K` | Toggle between List View and Kanban Board View |
+| `Esc` | Clear search input / close active modal |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📄 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License. Built for productivity enthusiasts.
